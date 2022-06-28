@@ -1,5 +1,5 @@
 AWSTemplateFormatVersion: "2010-09-09"
-Description: "SAAS Log Collector: Deploys the EC2 Instances (qs-xxxxxxx)"
+Description: "SAAS Log Collector: Deploys the EC2 Instances (qs-1t6cde8ln)"
 Metadata:
   cfn-lint:
     config:
@@ -29,17 +29,17 @@ Parameters:
   PrivateSubnetId:
     Description: ID of the private subnet in Availability Zone 1 of your existing VPC (e.g., subnet-a0246dcd).
     Type: "AWS::EC2::Subnet::Id"
-  PublicSubnetId:
-    Description: ID of the public subnet in of your existing VPC (e.g., subnet-a0246dcd).
-    Type: "AWS::EC2::Subnet::Id"
-  RemoteAccessCidr:
-    Description:
-      Remote CIDR range that allows you to connect to the bastion instance by using SSH.
-      We recommend that you set this value to a trusted IP range.
-      For example, you might want to grant specific ranges inside your corporate network SSH access.
-    AllowedPattern: ^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])(\/([0-9]|[1-2][0-9]|3[0-2]))$
-    ConstraintDescription: CIDR block parameter must be in the form x.x.x.x/x
-    Type: String
+#  PublicSubnetId:
+#    Description: ID of the public subnet in of your existing VPC (e.g., subnet-a0246dcd).
+#    Type: "AWS::EC2::Subnet::Id"
+#  RemoteAccessCidr:
+#    Description:
+#      Remote CIDR range that allows you to connect to the bastion instance by using SSH.
+#      We recommend that you set this value to a trusted IP range.
+#      For example, you might want to grant specific ranges inside your corporate network SSH access.
+#    AllowedPattern: ^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])(\/([0-9]|[1-2][0-9]|3[0-2]))$
+#    ConstraintDescription: CIDR block parameter must be in the form x.x.x.x/x
+#    Type: String
   VolumeSize:
     Description:
       Size in gigabytes of the available storage (min 10GB); the Quick Start will create an
