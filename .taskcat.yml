@@ -1,18 +1,20 @@
 project:
   name: quickstart-jfrog-saas-log-collector
   owner: quickstart-eng@amazon.com
-  s3_object_acl: private
-  s3_regional_buckets: True
-  s3_bucket: tcat-qs-saas-log
+#  s3_object_acl: private
+#  s3_regional_buckets: True
+#  s3_bucket: tcat-qs-saas-log
 
   parameters:
+    AvailabilityZones: $[taskcat_getaz_2]
     QsS3BucketName: "$[taskcat_autobucket]"
     QsS3KeyPrefix: "quickstart-jfrog-saas-log-collector/"
     QsS3BucketRegion: "$[taskcat_current_region]"
     ProvisionBastionHost: "Enabled"
-    VpcId: "vpc-xxxxxxx"
-    PublicSubnetId: "subnet-xxxxxx"
-    PrivateSubnetId: "subnet-xxxxxx"
+    RemoteAccessCidr: 0.0.0.0/0
+#    VpcId: "vpc-xxxxxxx"
+#    PublicSubnetId: "subnet-xxxxxx"
+#    PrivateSubnetId: "subnet-xxxxxx"
     JpdUrl: "https://xxxxx.jfrog.io/"
     JpdUserName: "admin"
     JpdAdminTokenSecretName: "jfrog-saas-log-collector"
@@ -24,6 +26,6 @@ project:
 
 tests:
   existing-vpc:
-    template: templates/jfrog-saas-log-collector-existing-vpc.template.yaml
+    template: templates/jfrog-saas-log-collector-new-vpc.template.yaml
     regions:
       - us-east-1
