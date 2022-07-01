@@ -352,6 +352,7 @@ Resources:
             rm -f /etc/machine-id
             systemd-machine-id-setup
 
+            cfn-init -v --stack ${AWS::StackName} --resource SaasLogCollectorInstacne --configsets jfrog_saas_log_collector_install --region ${AWS::Region} || cfn_fail
             # Setup CloudWatch Agent
             curl https://s3.amazonaws.com/aws-cloudwatch/downloads/latest/awslogs-agent-setup.py -O
             chmod +x ./awslogs-agent-setup.py
