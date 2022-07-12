@@ -8,7 +8,7 @@ connection:
 log:
   log_ship_config: "access/api/v1/logshipping/config"
   solutions_enabled: ["artifactory", "xray"]
-  log_types_enabled: ["access-request", "router-request"]
+  log_types_enabled: ["artifactory-request", "access-security-audit", "access-audit"]
   uri_date_pattern: "%Y-%m-%d"
   audit_repo: "artifactory/jfrog-logs-audit"
   log_repo: "artifactory/jfrog-logs"
