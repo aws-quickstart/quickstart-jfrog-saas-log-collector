@@ -1,4 +1,4 @@
-This Quick Start deploys https://github.com/jfrog/jfrog-saas-log-collector[JFrog Saas Log Collector] n the Amazon Web Services (AWS) Cloud.JFrog Saas log collector will collect logs from your jfrog saas instance which will be parsed and forward to analytics platform eg: Splunk,Datadog etc.
+This Quick Start deploys https://github.com/jfrog/jfrog-saas-log-collector[JFrog Saas Log Collector] on the Amazon Web Services (AWS) Cloud. THe JFrog SaaS Log Collector will collect logs from your JFrog SaaS environment, parse them and forward to your preferred analytics platform (Splunk, Datadog, etc.)
 // For advanced information about the product that this Quick Start deploys, refer to the https://{quickstart-github-org}.github.io/{quickstart-project-name}/operational/index.html[Operational Guide^].
 
 // For information about using this Quick Start for migrations, refer to the https://{quickstart-github-org}.github.io/{quickstart-project-name}/migration/index.html[Migration Guide^].
