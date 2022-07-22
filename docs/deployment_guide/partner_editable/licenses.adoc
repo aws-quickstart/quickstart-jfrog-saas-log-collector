@@ -1,4 +1,5 @@
 // Include details about any licenses and how to sign up. Provide links as appropriate.
 
 There is no cost to use this Quick Start, but you will be billed for any AWS services or resources that this Quick Start deploys. For more information, refer to the https://fwd.aws/rA69w?[AWS Quick Start General Information Guide^].
-This Quick Start requires a subscription to the CentOS AMI and JFrog cloud instance subscription.For cloud instance signup for https://jfrog.com/start-free/start-with-jfrog[Jfrog Cloud]
+
+This Quick Start requires a subscription to the https://www.centos.org/download/aws-images/[CentOS AMI] and https://jfrog.com/start-free/start-with-jfrog[JFrog cloud instance subscription].

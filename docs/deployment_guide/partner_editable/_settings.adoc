@@ -1,7 +1,7 @@
 :quickstart-project-name: quickstart-jfrog-saas-log-collector
 :quickstart-github-org: aws-quickstart
-:partner-product-name: JFrog SAAS Log Collector
-:partner-product-short-name: JFrog SAAS Log Collector
+:partner-product-name: JFrog SaaS Log Collector
+:partner-product-short-name: JFrog SaaS Log Collector
 :partner-company-name: JFrog Ltd.
 :doc-month: July
 :doc-year: 2022
