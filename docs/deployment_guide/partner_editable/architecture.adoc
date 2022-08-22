@@ -7,7 +7,7 @@ AWS Cloud.
 
 [#architecture1]
 .Quick Start architecture for {partner-product-short-name} on AWS
-image::../docs/deployment_guide/images/architecture_diagram.png[Architecture]
+image::../docs/deployment_guide/images/jfrog-saas-log-collector-architecture-diagram.png[Architecture]
 
 As shown in <<architecture1>>, this Quick Start sets up the following:
 
@@ -20,7 +20,7 @@ internet access for resources in the private subnets.*
 ** A Linux bastion host in an Auto Scaling group to allow inbound Secure
 Shell (SSH) access to Amazon Elastic Compute Cloud (Amazon EC2) instances in public and private subnets.*
 * In the private subnets:
-** One Amazon EC2 instance which runs JFrog SaaS log collector and fluentd to send log analytics data to preferred analytics platforms (Splunk, etc.)
+** One Amazon EC2 instance that runs the JFrog SaaS log collector and Fluentd, an open source data collector, to send log analytics data to the data analytics platform.
 // Add bullet points for any additional components that are included in the deployment. Ensure that the additional components are shown in the architecture diagram. End each bullet with a period.
 
 [.small]#* The template that deploys this Quick Start into an existing VPC skips the components marked by asterisks and prompts you for your existing VPC configuration.#
