@@ -21,6 +21,7 @@ internet access for resources in the private subnets.*
 Shell (SSH) access to Amazon Elastic Compute Cloud (Amazon EC2) instances in public and private subnets.*
 * In the private subnets:
 ** One Amazon EC2 instance that runs the JFrog SaaS log collector and Fluentd, an open source data collector, to send log analytics data to the data analytics platform.
+* AWS Secrets Manager to store the JFrog Platform admin token and any other tokens from the data analytics platform.
 // Add bullet points for any additional components that are included in the deployment. Ensure that the additional components are shown in the architecture diagram. End each bullet with a period.
 
 [.small]#* The template that deploys this Quick Start into an existing VPC skips the components marked by asterisks and prompts you for your existing VPC configuration.#
