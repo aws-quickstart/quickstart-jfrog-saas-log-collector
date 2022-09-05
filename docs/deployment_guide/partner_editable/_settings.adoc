@@ -3,7 +3,7 @@
 :partner-product-name: JFrog SaaS log collector
 :partner-product-short-name: JFrog SaaS log collector
 :partner-company-name: JFrog Ltd.
-:doc-month: August
+:doc-month: September
 :doc-year: 2022
 :partner-contributors: Giridharan Ramasamy, JFrog
 // :other-contributors: Akua Mansa, Trek10
