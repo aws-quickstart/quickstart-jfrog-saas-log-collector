@@ -307,8 +307,7 @@ Parameters:
       hyphens (-), underscores (_), periods (.), asterisks (*), single quotes ('),
       open parenthesis ((), close parenthesis ()), and forward slashes (/). End the
       prefix with a forward slash.
-   Default: quickstart-jfrog-artifactory/
-    Type: String
+    Default: quickstart-jfrog-artifactory/
   QsS3BucketRegion:
     Default: "us-east-1"
     Description: AWS Region where the S3 bucket (QSS3BucketName) is hosted. Keep
