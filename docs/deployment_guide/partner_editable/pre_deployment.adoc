@@ -5,7 +5,7 @@
 === Add JFrog Platform admin token to AWS Secrets Manager
 . Open the Jfrog Platform and https://www.jfrog.com/confluence/display/JFROG/Access+Tokens[[generate an admin token^].
 . Open the https://console.aws.amazon.com/secretsmanager/home?region=us-east-1#!/home[AWS Secrets Manager console^].
-. In the top toolbar, choose the AWS Region where you deploy the Quick Start.
+. In the top toolbar, choose the AWS Region where you deploy the Partner Solution.
 . Choose *Store a new secret*.
 . On the *Store a new secret* page, choose *Other type of secret*.
 . In the *Key/value pairs* section, create the JFrog admin token. In the first column, enter `JpdAdminToken`. In the second column, enter the token that was generated in step 1.
@@ -19,7 +19,7 @@ image::../docs/deployment_guide/images/jpd_admin_token_secret.png[image_placehol
 === Add Splunk HEC token to AWS Secrets Manager
 . Open Splunk and generate an https://docs.splunk.com/Documentation/Splunk/9.0.0/Data/UsetheHTTPEventCollector[HTTP Event Collector token^].
 . Open the https://console.aws.amazon.com/secretsmanager/home?region=us-east-1#!/home[AWS Secrets Manager console^].
-. In the top toolbar, choose the AWS Region where you plan to deploy the Quick Start.
+. In the top toolbar, choose the AWS Region where you plan to deploy the Partner Solution.
 . Choose *Store a new secret*.
 . On the *Store a new secret* page, choose *Other type of secret*.
 . In the *Key/value pairs* section, create the Splunk HEC token. In the first column, enter `SplunkHECToken`. In the second column, enter the token that was generated in step 1.
