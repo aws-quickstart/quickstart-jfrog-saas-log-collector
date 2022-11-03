@@ -1,5 +1,5 @@
-:quickstart-project-name: quickstart-jfrog-saas-log-collector
-:quickstart-github-org: aws-quickstart
+:partner-solution-project-name: quickstart-jfrog-saas-log-collector
+:partner-solution-github-org: aws-quickstart
 :partner-product-name: JFrog SaaS log collector
 :partner-product-short-name: JFrog SaaS log collector
 :partner-company-name: JFrog Ltd.
